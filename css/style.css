@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /***UTILITIES***/
@@ -60,6 +61,8 @@
     width: 100%;
     height: 100px;
     background-color:#080B12;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 /**IMG**/
@@ -84,6 +87,7 @@
 }
 
 /***NAV BAR UTILITIES***/
+/**sidebar nav**/
 .sidebar-nav.top{
     margin-top: 10px;
     height: auto;
@@ -103,6 +107,29 @@
 
 .sidebar-nav.top ul li{
     margin-bottom: 5px;
+}
+
+/****/
+
+/***BTN AND LINK***/
+
+/*utilities btn decorations*/
+.deco-none{
+    text-decoration: none;
+}
+
+.colr-wht{
+    color: white;
+}
+
+/*dimensions btn*/
+.top-bar a{
+    padding: 10px 40px;
+    margin-right: 5px;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 

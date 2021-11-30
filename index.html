@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Montserrat:wght@300;400;500&family=Nunito:ital,wght@1,600&family=Poppins:wght@500&family=Rubik+Mono+One&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify Web</title>
 </head>
@@ -14,6 +17,8 @@
 
         <!--main container with header and librery-->
         <header class="main-container d-flex">
+
+            <!--sidebar-->
             <div class="sidebar d-flex col">
                 <img class="logo-sidebar" src="img/logo-small.svg" alt="">
                 <div class="sidebar-nav top">
@@ -24,23 +29,21 @@
                     </ul>
                 </div>
 
+                <!--display none, element for media query-->
                 <div class="sidebar-nav center">
 
                 </div>
 
-
                 <div class="sidebar-nav bottom d-flex col">
                     <img class="download-logo" src="img/download.svg" alt="">
                     <img class="profile-logo" src="img/profile.svg" alt="">
-
                 </div>
-
-                
-
             </div>
 
             <div class="librery">
-                <header class="top-bar">
+                <header class="top-bar d-flex">
+                    <a class="btn deco-none colr-wht" href="#">EFFETTUA L'UPGRADE</a>
+
                 </header>
 
                 <section class="">
