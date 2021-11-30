@@ -5,6 +5,17 @@
     box-sizing: border-box;
 }
 
+/***UTILITIES***/
+.d-flex{
+    display: flex;
+}
+
+.col{
+    flex-direction: column;
+}
+
+
+
 /***MAIN LAYOUT***/
 .wrapper{
     width: 100%;
@@ -16,8 +27,6 @@
 .main-container{
     width: 100%;
     height: calc(100% - 90px);
-    display: flex;
-    
     background-color: red;
 }
 
@@ -37,6 +46,7 @@
     height: 100%;
     background-color: black;
     padding: 5px 10px;
+    
 }
 
 .librery{
@@ -57,14 +67,38 @@
 .logo-sidebar {
     width: 90%;
     height: auto;
-
 }
 
 /***ICONS***/
+.sidebar-nav.bottom .download-logo{
+    width: auto;
+    height: 15px;
+    margin-bottom: 20px;
+}
+
+.sidebar-nav.bottom .profile-logo{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: gray;
+}
 
 /***NAV BAR UTILITIES***/
 .sidebar-nav.top{
     margin-top: 10px;
+    height: auto;
+    width: 100%;
+}
+
+.sidebar-nav.center{
+    width: 100%;
+    flex-grow: 1;
+}
+
+.sidebar-nav.bottom{
+    height: auto;
+    width: 100%;
+    align-items: center;
 }
 
 .sidebar-nav.top ul li{
