@@ -24,9 +24,11 @@
 
                 <div class="sidebar-nav top">
                     <ul>
-                        <li><img class="img-nav" src="img/home.svg" alt="home"></li>
-                        <li> <img class="img-nav"  src="img/search.svg"         alt="search"></li>
-                        <li> <img class="img-nav"  src="img/libreria.svg" alt="librery"></li>
+                        <li><a href=""><img class="img-nav" src="img/home.svg" alt="home"><span class="query-element">Home</span></a></li>
+
+                        <li><a href=""> <img class="img-nav"  src="img/search.svg"alt="search"><span class="query-element">Cerca</span></a></li>
+
+                        <li> <a href=""><img class="img-nav"  src="img/libreria.svg" alt="librery"><span class="query-element">La tua libreria</span></a></li>
                     </ul>
                 </div>
 
@@ -138,8 +140,41 @@
         </header>
 
         <!--bottom container with player-->
-        <footer class="bottom-container">
+        <footer class="bottom-container d-flex">
+            <div class="player-left d-flex">
+                <figure class="img-player d-flex">
+                    <img src="img/sinister.jpeg" alt="">
+                </figure>
 
+                <span class="brano-nome">
+                <h5 class="colr-wht">Sinister</h5>
+                <h6>brano</h6>
+                <h6>Nome</h6>
+                </span>
+
+                <span class="player-left-icon d-flex col">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-folder"></i>
+                </span>
+            </div>
+
+            <!--player centrale-->
+            <div class="player-center d-flex col">
+                <div class="player-center-nav d-flex ht50">
+                    <ul class="player-icons d-flex">
+                        <li><a href=""><i class="fas fa-random"></i></a></li>
+                        <li><a href=""><i class="fas fa-step-backward"></i></a></li>
+                        <li><a href=""><i class="far fa-play-circle"></i></a></li>
+                        <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                        <li><a href=""><i class="fas fa-redo-alt"></i></a></li>
+                    </ul>
+                </div>
+                <div class="player-bar d-flex ht50">
+                    <span>0:25</span><span class="progress-bar"></span><span>4:35</span>
+                </div>
+
+            </div>
+            <div class="player-right"></div>
         </footer>
 
 

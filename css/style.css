@@ -7,6 +7,9 @@
 }
 
 /***UTILITIES***/
+a{
+    text-decoration: none;
+}
 .d-flex{
     display: flex;
 }
@@ -17,6 +20,11 @@
 
 .wrap{
     flex-wrap: wrap;
+}
+
+.ht50{
+    width: auto;
+    height: 50%;
 }
 
 /***TEXT***/
@@ -31,6 +39,21 @@
     color: #7D7F84 ;
     margin-top: 12px;
 }
+
+.query-element{
+    display: none;
+    text-decoration: none;
+    color: #7D7F84;
+}
+
+
+
+.brano-nome h6{
+    color: #7D7F84;
+    
+}
+
+
 
 
 
@@ -101,6 +124,35 @@
     margin: 5px;
     text-align: center;
 }
+.player-right,
+.player-left{
+    width: 30%;
+    height: auto;
+    
+}
+
+.player-center{
+    flex-grow: 1.5;
+    height: 100%;
+    
+}
+
+.player-left{
+    align-items: center;
+}
+
+.img-player{
+    width: 20%;
+    height: auto;
+    margin: 0px 10px;
+}
+
+.player-center-nav{
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 
 /**IMG**/
@@ -119,6 +171,11 @@
     border-radius: 50%;
 }
 
+.img-player img{
+    width: 100%;
+    height: auto;
+}
+
 /***ICONS***/
 .sidebar-nav.bottom .download-logo{
     width: auto;
@@ -132,6 +189,49 @@
     border-radius: 50%;
     background-color: gray;
 }
+
+.player-left-icon{
+    margin-left: 20px;
+    color: #7D7F84
+
+}
+
+.far.fa-heart{
+    margin-bottom: 5px;
+}
+
+.player-icons{
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    
+}
+
+.player-icons li{
+    margin-right: 20px;
+}
+
+.player-icons li a{
+    color: white;
+    font-size: 16px;
+}
+
+.fa-play-circle{
+    font-size: 30px;
+}
+
+/***BAR PLAYER***/
+.player-bar{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar{
+    width: 85%;
+    height: 5px;
+    background-color: gray;
+}
+
 
 /***NAV BAR UTILITIES***/
 /**sidebar nav**/
