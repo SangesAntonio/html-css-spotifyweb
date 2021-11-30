@@ -15,6 +15,10 @@
     flex-direction: column;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
+
 
 
 /***MAIN LAYOUT***/
@@ -53,17 +57,23 @@
 .librery{
     flex-basis: calc(100% - 50px);
     height: 100%;
-    overflow: auto;
+    overflow-y: scroll;
     background-color: #141922;
 }
 
 .top-bar{
-    width: 100%;
+    width: calc(100% - 50px);
     height: 100px;
+    position: fixed;
     background-color:#080B12;
     justify-content: flex-end;
     align-items: center;
 }
+
+.play-librery{
+    margin-top: 100px;
+}
+
 
 /**IMG**/
 .img-nav,
@@ -109,7 +119,24 @@
     margin-bottom: 5px;
 }
 
-/****/
+/**librery nav**/
+.librery-nav ul{
+    justify-content: center;
+    list-style: none;
+
+}
+
+.librery-nav ul li a{
+    color: #7D7F84;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.librery-nav ul li{
+    margin: 20px 10px;
+}
+
 
 /***BTN AND LINK***/
 
