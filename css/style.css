@@ -46,11 +46,16 @@ a{
     color: #7D7F84;
 }
 
-
-
 .brano-nome h6{
     color: #7D7F84;
     
+}
+
+.started-from,
+.ending-in{
+    font-size: 8px;
+    font-weight: bold;
+    margin: 0 7px;
 }
 
 
@@ -134,6 +139,7 @@ a{
 .player-center{
     flex-grow: 1.5;
     height: 100%;
+    padding: 5px 0;
     
 }
 
@@ -142,7 +148,7 @@ a{
 }
 
 .img-player{
-    width: 20%;
+    flex-basis: 35px;
     height: auto;
     margin: 0px 10px;
 }
@@ -152,6 +158,12 @@ a{
     align-items: center;
 }
 
+.player-right{
+    justify-content: flex-end;
+    align-items: center;
+    
+
+}
 
 
 
@@ -190,7 +202,7 @@ a{
     background-color: gray;
 }
 
-.player-left-icon{
+.player-left-icon a{
     margin-left: 20px;
     color: #7D7F84
 
@@ -209,7 +221,13 @@ a{
 
 .player-icons li{
     margin-right: 20px;
+
 }
+
+.player-icons li:last-of-type{
+    margin-right: 0;
+}
+
 
 .player-icons li a{
     color: white;
@@ -220,16 +238,28 @@ a{
     font-size: 30px;
 }
 
-/***BAR PLAYER***/
+.player-right span i{
+    margin-right: 8px;
+    color: white;
+    font-size: 12px;
+}
+
+/***PROGRESS BAR PLAYER***/
 .player-bar{
     width: 100%;
     justify-content: center;
     align-items: center;
 }
 .progress-bar{
-    width: 85%;
+    width: 65%;
     height: 5px;
+    border-radius: 20px;
     background-color: gray;
+}
+
+.progress-bar.volume{
+    flex-basis: 80px;
+    margin-right: 10px;
 }
 
 
