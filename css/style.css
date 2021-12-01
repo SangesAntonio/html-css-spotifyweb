@@ -59,7 +59,6 @@ a{
 
 .brano-nome h6{
     color: #7D7F84;
-    
 }
 
 .started-from,
@@ -84,7 +83,6 @@ a{
     width: 100%;
     height: 100vh;
     position: relative;
-
 }
 
 .main-container{
@@ -108,7 +106,6 @@ a{
     height: 100%;
     background-color: black;
     padding: 5px 10px;
-    
 }
 
 .library{
@@ -145,20 +142,18 @@ a{
     height: auto;
     margin: 5px;
     text-align: center;
-    
 }
+
 .player-right,
 .player-left{
     width: 30%;
     height: auto;
-    
 }
 
 .player-center{
     flex-grow: 1.5;
     height: 100%;
     padding: 5px 0;
-    
 }
 
 .player-left{
@@ -179,11 +174,7 @@ a{
 .player-right{
     justify-content: flex-end;
     align-items: center;
-    
-
 }
-
-
 
 /**IMG**/
 .img-nav,
@@ -203,7 +194,6 @@ a{
 .card img{
     width: 100%;
     height: auto;
-    
 }
 
 .card.radius img{
@@ -264,7 +254,6 @@ hr.green-line{
 .player-left-icon a{
     margin-left: 20px;
     color: #7D7F84
-
 }
 
 .far.fa-heart{
@@ -275,12 +264,10 @@ hr.green-line{
     justify-content: center;
     align-items: center;
     list-style: none;
-    
 }
 
 .player-icons li{
     margin-right: 20px;
-
 }
 
 .player-icons li:last-of-type{
@@ -360,7 +347,6 @@ hr.green-line{
     top: -100%;
     display: none;
     cursor: pointer;
-    
 }
 
 
@@ -388,7 +374,6 @@ hr.green-line{
 .playlist-name ul li a{
     margin-bottom: 15px;
     font-size: 12px;
-    
 }
 
 .sidebar-nav.bottom{
@@ -406,7 +391,6 @@ hr.green-line{
     justify-content: center;
     list-style: none;
     margin-bottom: 20px;
-
 }
 
 .library-nav ul li a{
@@ -419,7 +403,6 @@ hr.green-line{
 .library-nav ul li{
     margin: 20px 10px;
 }
-
 
 /***BTN AND LINK***/
 
@@ -441,7 +424,6 @@ hr.green-line{
     font-size: 12px;
     font-weight: bold;
 }
-
 
 /****MEDIA QUERY****/
 
@@ -568,7 +550,7 @@ footer .fa-play-circle:hover{
     filter: opacity(0.6);
 }
 
- 
+
 li a .img-nav:hover{
     filter: brightness(50);
 }
