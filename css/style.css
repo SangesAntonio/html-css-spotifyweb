@@ -570,5 +570,5 @@ footer .fa-play-circle:hover{
 
  
 li a .img-nav:hover{
-    fill: #ffffff;
+    filter: brightness(50);
 }
