@@ -300,11 +300,35 @@ a{
     height: 5px;
     border-radius: 20px;
     background-color: gray;
+    cursor: pointer;
 }
 
 .progress-bar.volume{
     flex-basis: 80px;
     margin-right: 10px;
+}
+
+.progress{
+    width: 30%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: lightgray;
+    position: relative;
+    cursor: pointer;
+}
+
+.circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: greenyellow;
+    border: 3px solid gray;
+    position: absolute;
+    right: -10%;
+    top: -100%;
+    display: none;
+    cursor: pointer;
+    
 }
 
 
@@ -464,3 +488,33 @@ a{
 
 }
 /*----END QUERY---*/
+
+/**HOVER EFFECTS**/
+.progress-bar:hover .circle{
+    display: inline-block;
+}
+
+.progress-bar:hover .progress{
+    background-color: greenyellow;
+    
+}
+
+.player-left h6:hover,
+.player-left-icon .fa-folder:hover,
+.player-left-icon .fa-heart:hover,
+.library-nav nav ul li :hover,
+.sidebar-nav.bottom a :hover,
+.playlist-name ul li a:hover,
+.container-side-center a h4 :hover,
+.sidebar-nav ul li a img :hover,
+.sidebar-nav ul li a :hover{
+    color: white;
+}
+
+.player-left h6:hover{
+    text-decoration-line: underline;
+}
+
+.fa-play-circle:hover{
+    
+}
