@@ -43,6 +43,8 @@ a{
 .query-element{
     display: none;
     text-decoration: none;
+    font-size: 12px;
+    margin-left: 10px;
     color: #7D7F84;
 }
 
@@ -79,9 +81,8 @@ a{
 .bottom-container{
     width: 100%;
     height: 90px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    position: relative;
+    z-index: 3;
     background-color: #282828;
 }
 
@@ -106,7 +107,7 @@ a{
     width: calc(100% - 50px);
     height: 100px;
     position: fixed;
-    background-color:#080B12;
+    background-color:#080b126e;
     justify-content: flex-end;
     align-items: center;
 }
@@ -172,6 +173,14 @@ a{
 .logo-sidebar {
     width: 90%;
     height: auto;
+}
+
+.logo-big{
+    display: none;
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 15px;
 }
 
 .card img{
@@ -327,5 +336,45 @@ a{
     font-weight: bold;
 }
 
+
+/****MEDIA QUERY****/
+
+@media screen and (min-width: 769px){
+    .sidebar{
+        flex-shrink: 0;
+        width: 200px;
+    }
+
+    .sidebar-nav li a{
+        display: flex;
+        align-items: center;
+        width: auto;
+        height: auto;
+    }
+
+    .sidebar-nav li img{
+        width: 15%;
+        height: auto;
+    }
+
+    .logo-sidebar{
+        display: none;
+    }
+
+    .logo-big{
+        display: inline-block;
+    }
+
+    .top-bar{
+        width: calc(100% - 200px);
+    }
+
+    .query-element{
+        
+        display: inline-block;
+    }
+
+
+}
 
 
