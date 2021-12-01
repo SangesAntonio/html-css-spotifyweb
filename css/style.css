@@ -22,6 +22,10 @@ a{
     flex-wrap: wrap;
 }
 
+.d-none{
+    display: none;
+}
+
 .ht50{
     width: auto;
     height: 50%;
@@ -34,6 +38,7 @@ a{
     font-size: 1rem;
     margin-top: 14px;
 }
+.sidebar-nav.center a,
 .play-library h5,
 .card h5{
     color: #7D7F84 ;
@@ -48,6 +53,10 @@ a{
     color: #7D7F84;
 }
 
+.query-element h3{
+    font-size: 12px;
+}
+
 .brano-nome h6{
     color: #7D7F84;
     
@@ -59,6 +68,11 @@ a{
     font-weight: bold;
     margin: 0 7px;
 }
+
+.sidebar-nav.center h3{
+    font-size: 12px;
+}
+
 
 
 
@@ -105,7 +119,7 @@ a{
 
 .top-bar{
     width: calc(100% - 50px);
-    height: 100px;
+    height: 80px;
     position: fixed;
     background-color:#080b126e;
     justify-content: flex-end;
@@ -113,7 +127,7 @@ a{
 }
 
 .play-library{
-    margin-top: 100px;
+    margin-top: 80px;
     margin-bottom: 70px;
     padding: 0px 20px;
 }
@@ -125,7 +139,7 @@ a{
 }
 
 .card{
-    flex-basis: 220px;
+    flex-basis: calc(100% / 2 - 20px);
     height: auto;
     margin: 5px;
     text-align: center;
@@ -198,10 +212,28 @@ a{
 }
 
 /***ICONS***/
+.fa-plus{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    padding: 10px 10px;
+    padding-left: 11px;
+    color: black;
+    margin-right: 10px;
+    background-color: #83858a;
+}
+
 .sidebar-nav.bottom .download-logo{
     width: auto;
     height: 15px;
     margin-bottom: 20px;
+}
+
+#line-download{
+    color: gray;
+    width: 100%;
+    margin-bottom: 10px;
+    display: none;
 }
 
 .sidebar-nav.bottom .profile-logo{
@@ -209,6 +241,10 @@ a{
     height: 25px;
     border-radius: 50%;
     background-color: gray;
+}
+
+.sidebar-nav.bottom a{
+    align-items: center;
 }
 
 .player-left-icon a{
@@ -283,6 +319,19 @@ a{
 .sidebar-nav.center{
     width: 100%;
     flex-grow: 1;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    overflow-y: auto;
+
+}
+
+.sidebar-nav.center a{
+    align-items: center;
+}
+
+.playlist-name ul li a{
+    font-size: 12px;
+    
 }
 
 .sidebar-nav.bottom{
@@ -295,7 +344,7 @@ a{
     margin-bottom: 5px;
 }
 
-/**librery nav**/
+/**library nav**/
 .library-nav ul{
     justify-content: center;
     list-style: none;
@@ -329,7 +378,7 @@ a{
 /*dimensions btn*/
 .top-bar a{
     padding: 10px 40px;
-    margin-right: 5px;
+    margin-right: 20px;
     border: 2px solid white;
     border-radius: 25px;
     font-size: 12px;
@@ -339,7 +388,7 @@ a{
 
 /****MEDIA QUERY****/
 
-@media screen and (min-width: 769px){
+@media screen and (min-width: 569px){
     .sidebar{
         flex-shrink: 0;
         width: 200px;
@@ -365,6 +414,32 @@ a{
         display: inline-block;
     }
 
+    .container-side-center.d-none{
+        display: inline-block;
+    }
+
+    .sidebar-nav.bottom{
+        align-items: flex-start;
+
+    }
+
+    .sidebar-nav.bottom .download-logo{
+        margin-bottom: 0px;
+    }
+
+    .sidebar-nav.bottom a{
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    .card{
+        flex-basis: calc(100% / 2 - 20px);
+    }
+
+    #line-download{
+        display: inline-block;
+    }
+
     .top-bar{
         width: calc(100% - 200px);
     }
@@ -374,7 +449,17 @@ a{
         display: inline-block;
     }
 
-
 }
 
+@media screen and (min-width: 767px){
+    .card{
+        flex-basis: calc(100% / 4 - 20px);
+    }
+}
 
+@media screen and (min-width: 991px){
+    .card{
+        flex-basis: calc(100% / 6 - 20px);
+    }
+
+}
