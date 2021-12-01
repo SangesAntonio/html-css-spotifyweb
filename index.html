@@ -27,7 +27,7 @@
                     <ul>
                         <li><a href=""><img class="img-nav" src="img/home.svg" alt="home"><span class="query-element">Home</span></a></li>
 
-                        <li><a href=""> <img class="img-nav"  src="img/search.svg"alt="search"><span class="query-element">Cerca</span></a></li>
+                        <li><a href=""> <img class="img-nav"  src="img/search.svg" alt="search"><span class="query-element">Cerca</span></a></li>
 
                         <li> <a href=""><img class="img-nav"  src="img/libreria.svg" alt="librery"><span class="query-element">La tua libreria</span></a></li>
                     </ul>
@@ -63,7 +63,7 @@
 
                     <hr id="line-download">
 
-                    <a class="d-flex" href=""><img class="profile-logo" src="img/profile.svg" alt=""><span class="query-element colr-wht"><h3>Antonio S.</h3></span></a>
+                    <a class="d-flex" href=""><img class="profile-logo" src="img/profile.svg" alt=""><div class="query-element colr-wht"><h3>Antonio S.</h3></div></a>
                 </div>
             </div>
 
@@ -78,7 +78,8 @@
                     <div class="library-nav">
                         <nav>
                             <ul class="d-flex wrap deco-none">
-                                <li><a href="">IN EVIDENZA</a></li>
+                                <li><a href="">IN EVIDENZA</a> <hr class="green-line"></li>
+                                
                                 <li><a href="">PODCAST</a></li>
                                 <li><a href="">CLASSIFICHE</a></li>
                                 <li><a href="">GENERI E MOOD</a></li>
@@ -93,39 +94,58 @@
                     <!--library contents-->
                     <div class="music-content d-flex wrap">
                          <div class="card ">
-                             <img src="img/metal_lifting.jpg" alt="">
+                            <div class="play-btn-hover">
+                                <img src="img/metal_lifting.jpg" alt="">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+
                              <h2>Heavy Metal</h2>
                              <h5>Subtitle</h5>
                          </div>
 
                          <div class="card ">
-                             <img src="img/stranger.jpeg" alt="">
+                            <div class="play-btn-hover">
+                                <img src="img/stranger.jpeg" alt="">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                              <h2>Stranger Things , Vol.1(a Netflix original Series Soundtrack)</h2>
                              <h5>kyle Dyxon & Michael Stein</h5>
                          </div>
 
                          <div class="card ">
-                             <img src="img/aquietplace.jpeg" alt="">
+                            <div class="play-btn-hover">
+                                <img src="img//aquietplace.jpeg" alt="">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                              <h2>A Quiet Place</h2>
                              <h5>Subtitle</h5>
                          </div>
 
                          <div class="card ">
-                             <img src="img/split.jpeg" alt="">
+                            <div class="play-btn-hover">
+                                <img src="img//split.jpeg" alt="">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                              <h2>Split</h2>
                              <h5>Subtitle</h5>
                          </div>
 
                          <div class="card ">
-                             <img src="img/cure.jpeg" alt="">
-                             <h2>A cure for wellnes</h2>
-                             <h5>Subtitle</h5>
+                            <div class="play-btn-hover">
+                                <img src="img//cure.jpeg" alt="">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                            <h2>A cure for wellnes</h2>
+                            <h5>Subtitle</h5>
                          </div>
 
                          <div class="card ">
-                             <img src="img/sinister.jpeg" alt="">
-                             <h2>Sinister</h2>
-                             <h5>Subtitle</h5>
+                            <div class="play-btn-hover">
+                                <img src="img/sinister.jpeg" alt="">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                            <h2>Sinister</h2>
+                            <h5>Subtitle</h5>
                          </div>
                     </div>
 
@@ -134,12 +154,18 @@
                     <h5 >Più ascolti, più accurati saranno i suggerimenti</h5>
                     <div class="music-content mix d-flex wrap">
                         <div class="card ">
-                            <img src="img/radar.jpeg" alt="">
+                            <div class="play-btn-hover">
+                                <img src="img/radar.jpeg" alt="">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                             <h2>Release Radar</h2>
                         </div>
 
                         <div class="card ">
-                            <img src="img/mixdaily.jpeg" alt="">
+                            <div class="play-btn-hover">
+                                <img src="img/mixdaily.jpeg" alt="">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                             <h2>Daily Mix 1</h2>                           
                         </div>
                     </div> 
@@ -149,12 +175,18 @@
                     <h5 >Più ascolti, più accurati saranno i suggerimenti</h5>
                     <div class="music-content popular d-flex wrap">
                         <div class="card radius">
-                            <img src="img/youg.jpeg" alt="">
+                            <div class="play-btn-hover">
+                                <img src="img/youg.jpeg" alt="">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                             <h2>Lana Del Ray</h2>                           
                         </div>
 
                         <div class="card radius">
-                            <img src="img/einaudi.jpeg" alt="">
+                            <div class="play-btn-hover">
+                                <img src="img/einaudi.jpeg" alt="">
+                                <i class="far fa-play-circle"></i>
+                            </div>
                             <h2>Ludovico Einaudi</h2>                       
                         </div>
                     </div>    
@@ -170,11 +202,11 @@
                     <img src="img/sinister.jpeg" alt="">
                 </figure>
 
-                <span class="brano-nome">
+                <div class="brano-nome">
                 <h5 class="colr-wht">Sinister</h5>
                 <h6>brano</h6>
                 <h6>Nome</h6>
-                </span>
+                </div>
 
                 <span class="player-left-icon d-flex col">
                     <a href=""><i class="far fa-heart"></i></a>
@@ -208,9 +240,9 @@
 
             <!--player right-->
             <div class="player-right d-flex">
-                <span><a href=""><i class="fas fa-list-ul"></i></a></span>
-                <span><a href=""><i class="fas fa-desktop"></i></a></span>
-                <span><a href=""><i class="fas fa-volume-up"></i></a></span>
+                <div><a href=""><i class="fas fa-list-ul"></i></a></div>
+                <div><a href=""><i class="fas fa-desktop"></i></a></div>
+                <div><a href=""><i class="fas fa-volume-up"></i></a></div>
                 <div class="progress-bar volume">
                     <div class="progress">
                         <div class="circle"></div>

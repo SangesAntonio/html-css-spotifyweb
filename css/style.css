@@ -73,9 +73,10 @@ a{
     font-size: 12px;
 }
 
-
-
-
+.query-element,
+.container-side-center .playlist-name ul li a{
+    font-weight: bold;
+}
 
 
 /***MAIN LAYOUT***/
@@ -121,6 +122,7 @@ a{
     width: calc(100% - 50px);
     height: 80px;
     position: fixed;
+    z-index: 2;
     background-color:#080b126e;
     justify-content: flex-end;
     align-items: center;
@@ -143,6 +145,7 @@ a{
     height: auto;
     margin: 5px;
     text-align: center;
+    
 }
 .player-right,
 .player-left{
@@ -200,6 +203,7 @@ a{
 .card img{
     width: 100%;
     height: auto;
+    
 }
 
 .card.radius img{
@@ -212,6 +216,10 @@ a{
 }
 
 /***ICONS***/
+
+.sidebar-nav.center a{
+    margin-bottom: 20px;
+}
 .fa-plus{
     width: 40px;
     height: 40px;
@@ -234,6 +242,12 @@ a{
     width: 100%;
     margin-bottom: 10px;
     display: none;
+}
+
+hr.green-line{
+    width: 30%;
+    margin: 0 auto;
+    color: greenyellow;
 }
 
 .sidebar-nav.bottom .profile-logo{
@@ -283,11 +297,29 @@ a{
     font-size: 30px;
 }
 
-.player-right span i{
+.player-right div i{
     margin-right: 8px;
     color: white;
     font-size: 12px;
 }
+
+.play-btn-hover{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.play-btn-hover i{
+    opacity: 0;
+    color: white;
+    position: absolute;
+    font-size: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 
 /***PROGRESS BAR PLAYER***/
 .player-bar{
@@ -354,6 +386,7 @@ a{
 }
 
 .playlist-name ul li a{
+    margin-bottom: 15px;
     font-size: 12px;
     
 }
@@ -438,6 +471,8 @@ a{
         display: inline-block;
     }
 
+    
+
     .container-side-center.d-none{
         display: inline-block;
     }
@@ -490,6 +525,7 @@ a{
 /*----END QUERY---*/
 
 /**HOVER EFFECTS**/
+
 .progress-bar:hover .circle{
     display: inline-block;
 }
@@ -503,10 +539,10 @@ a{
 .player-left-icon .fa-folder:hover,
 .player-left-icon .fa-heart:hover,
 .library-nav nav ul li :hover,
-.sidebar-nav.bottom a :hover,
+.sidebar-nav.bottom a:hover,
 .playlist-name ul li a:hover,
-.container-side-center a h4 :hover,
-.sidebar-nav ul li a img :hover,
+.container-side-center a h4:hover,
+.sidebar-nav ul li a img:hover,
 .sidebar-nav ul li a :hover{
     color: white;
 }
@@ -514,7 +550,25 @@ a{
 .player-left h6:hover{
     text-decoration-line: underline;
 }
+.top-bar .btn:hover,
+footer .fa-play-circle:hover{
+    transform: scale(1.1);
+}
 
-.fa-play-circle:hover{
-    
+.fa-plus:hover{
+    background-color: white;
+}
+
+.card :hover .fa-play-circle{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.card :hover img{
+    filter: opacity(0.6);
+}
+
+ 
+li a .img-nav:hover{
+    fill: #ffffff;
 }
