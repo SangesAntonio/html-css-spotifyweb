@@ -139,7 +139,7 @@ a{
 }
 
 .card{
-    flex-basis: calc(100% / 2 - 20px);
+    flex-basis: calc(100% / 2 - 10px);
     height: auto;
     margin: 5px;
     text-align: center;
@@ -433,7 +433,7 @@ a{
     }
     
     .card{
-        flex-basis: calc(100% / 2 - 20px);
+        flex-basis: calc(100% / 2 - 10px);
     }
 
     #line-download{
@@ -453,13 +453,14 @@ a{
 
 @media screen and (min-width: 767px){
     .card{
-        flex-basis: calc(100% / 4 - 20px);
+        flex-basis: calc(100% / 4 - 10px);
     }
 }
 
 @media screen and (min-width: 991px){
     .card{
-        flex-basis: calc(100% / 6 - 20px);
+        flex-basis: calc(100% / 6 - 10px);
     }
 
 }
+/*----END QUERY---*/
