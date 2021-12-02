@@ -142,6 +142,8 @@ a{
     height: auto;
     margin: 5px;
     text-align: center;
+    transition: transform 0.2s ;
+
 }
 
 .player-right,
@@ -192,8 +194,12 @@ a{
 }
 
 .card img{
-    width: 100%;
+    max-width: 100%;
     height: auto;
+    transform: translateY(0px);
+    
+
+
 }
 
 .card.radius img{
@@ -524,8 +530,7 @@ hr.green-line{
 .sidebar-nav.bottom a:hover,
 .playlist-name ul li a:hover,
 .container-side-center a h4:hover,
-.sidebar-nav ul li a img:hover,
-.sidebar-nav ul li a :hover{
+.sidebar-nav ul li a img:hover{
     color: white;
 }
 
@@ -541,16 +546,26 @@ footer .fa-play-circle:hover{
     background-color: white;
 }
 
-.card :hover .fa-play-circle{
+.card:hover .fa-play-circle{
     cursor: pointer;
     opacity: 1;
+    transition: opacity 0.2s;
 }
 
-.card :hover img{
+.card:hover img{
     filter: opacity(0.6);
+    transition: filter 0.2s;
+
 }
 
+.card:hover{
+    transform: translateY(-10px);
+    transition: transform 0.2s ;
+}
 
+.sidebar-nav ul li :hover,
 li a .img-nav:hover{
     filter: brightness(50);
+    color: white;
 }
+
