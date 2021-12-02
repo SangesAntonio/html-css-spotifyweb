@@ -183,6 +183,7 @@ a{
 .logo-sidebar {
     width: 90%;
     height: auto;
+    cursor: pointer;
 }
 
 .logo-big{
@@ -191,6 +192,8 @@ a{
     height: auto;
     margin-bottom: 20px;
     margin-top: 15px;
+    cursor: pointer;
+
 }
 
 .card img{
@@ -323,6 +326,7 @@ hr.green-line{
 .progress-bar{
     width: 65%;
     height: 5px;
+    
     border-radius: 20px;
     background-color: gray;
     cursor: pointer;
@@ -369,7 +373,7 @@ hr.green-line{
     flex-grow: 1;
     margin-top: 20px;
     margin-bottom: 10px;
-    overflow-y: auto;
+    overflow-y:auto;
 
 }
 
@@ -509,6 +513,10 @@ hr.green-line{
         flex-basis: calc(100% / 6 - 10px);
     }
 
+    .player-left h6{
+        display: inline-block;
+    }
+
 }
 /*----END QUERY---*/
 
@@ -527,7 +535,7 @@ hr.green-line{
 .player-left-icon .fa-folder:hover,
 .player-left-icon .fa-heart:hover,
 .library-nav nav ul li :hover,
-.sidebar-nav.bottom a:hover,
+.sidebar-nav.bottom .query-element:hover,
 .playlist-name ul li a:hover,
 .container-side-center a h4:hover,
 .sidebar-nav ul li a img:hover{
